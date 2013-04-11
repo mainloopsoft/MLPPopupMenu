@@ -42,11 +42,15 @@
 
 - (void)popInTabBar:(UITabBar*)tabBar forItemAtIndex:(NSInteger)index
 {
-    UIView *view = [[tabBar subviews] objectAtIndex:index + 1];
-    if([view.superview isKindOfClass:[UITabBar class]]){
-        UITabBar *navBar = (UITabBar*)view.superview;
-        [navBar.superview insertSubview:self belowSubview:navBar];
+    NSMutableArray *items = [[NSMutableArray alloc] init];
+    for (id item in tabBar.subviews) {
+        if ([item isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+            [items addObject:item];
+        }
     }
+    
+    UIView *view = [items objectAtIndex:index];
+    [tabBar.superview insertSubview:self belowSubview:tabBar];
     
     [self popInView:view];
 }
