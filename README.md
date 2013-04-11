@@ -2,8 +2,8 @@ MLPPopupMenu
 ============
 
 
-![](https://github.com/mainloopsoft/MLPPopupMenu/blob/master/screenshot1.png)
-![](https://github.com/mainloopsoft/MLPPopupMenu/blob/master/screenshot2.png)
+![Screenshot](https://github.com/mainloopsoft/MLPPopupMenu/blob/master/screenshot1.png)
+![Screenshot](https://github.com/mainloopsoft/MLPPopupMenu/blob/master/screenshot2.png)
 
 Documentation: http://www.mainloop.co/2013/04/mlppopupmenu/
 
